@@ -1,0 +1,84 @@
+<html>
+ <head>
+    <meta charset="utf-8">
+   <title>Survey Form</title>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+  </head>
+<body>
+<div id="container">
+<div id="box-1">
+  <div class="content">
+     <h1 id="title">
+      CUSTOMER SURVEY
+      </h1>
+      <p id="description">
+        Please provide us feedback so we can contunie to make it better
+      </p>
+      </div>
+  </div>
+<div id="box-2">
+  <div class="content">
+    <form action="index.html" id="survey-form">
+    <div>
+      <h2>Personal Info</h2>
+    </div>
+    <div>
+    <label for="name-label">First Name</label>
+    <input type="text" id="name" name="name" placeholder="John">
+    </div>
+    <div>
+    <label for="name-label">Last Name</label>
+    <input type="text" id="name" name="name" placeholder="Doe">
+    </div>
+    <div>
+    <label for="email-label">Email</label>
+    <input type="email" id="email" name="email" placeholder="john@company.com">
+    </div>
+    <div>
+    <label for="number-label">Phone Number</label>
+    <input type="number" id="number" name="number" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12">
+    </div>
+    <div>
+      <h2>Questions</h2>
+    </div>
+    <div>
+    <label for="find">1. How did you find us?</label>
+    </div>
+    <div>
+          <select id="find" name="find" placeholder="Please select...">
+              <option value="google" selected>Google</option>
+              <option value="e-mail">E-mail</option>
+              <option value="recommend">Recommended by friend/colleague</option>
+              <option value="blog">Blog</option>
+              <option value="newspaper">Newspaper</option>
+          </select>
+    </div>
+    <div>
+    <label>2. How likely are you to work with us again?</label>
+    </div>
+    <div>
+    <input type="radio" checked id="very-likely" value="very-likely" name="likelyhood">
+    <label for="very-likely" class="light">Very likely</label><br>
+    
+      <input type="radio" id="likelyhood" value="quite-likely" name="likelyhood">
+    <label for="quite-likely" class="light">Quite likely</label><br>
+    
+    <input type="radio" id="likelyhood" value="not-likely" name="likelyhood">
+    <label for="not-likely" class="light">Not likely</label><br>
+    
+    <input type="radio" id="likelyhood" value="not-again" name="likelyhood">
+    <label for="not-again" class="light">Definitely not again</label><br>
+    </div>
+          
+    
+    <div>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+    </div>
+  </form>
+  </div>
+  
+  </div>
+</div>
+</body>
+  </html>
